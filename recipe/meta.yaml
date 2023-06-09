@@ -1,4 +1,4 @@
-{% set version = '0.9.1' %}
+{% set version = "0.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/JBrowseR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/JBrowseR/JBrowseR_{{ version }}.tar.gz
-  sha256: eed060d09eae603a8783b77ec4b8caa5b9b439731f8d5b816560080a487cb821
+  sha256: 3e239a6f1717d862f050cd1e20ac378e9c62df73e96aee29deb349461378386a
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -61,10 +61,7 @@ test:
 about:
   home: https://gmod.github.io/JBrowseR/ https://github.com/GMOD/JBrowseR
   license: Apache-2.0
-  summary: Provides an R interface to the JBrowse 2 genome browser. Enables embedding a JB2 genome
-    browser in a Shiny app or R Markdown document. The browser can also be launched
-    from an interactive R console. The browser can be loaded with a variety of common
-    genomics data types, and can be used with a custom theme.
+  summary: Provides an R interface to the JBrowse 2 genome browser. Enables embedding a JB2 genome browser in a Shiny app or R Markdown document. The browser can also be launched from an interactive R console. The browser can be loaded with a variety of common genomics data types, and can be used with a custom theme.
   license_family: APACHE
   license_file: LICENSE.txt
 
@@ -72,6 +69,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - ctuni
+
 # Package: JBrowseR
 # Title: An R Interface to the JBrowse 2 Genome Browser
 # Version: 0.9.1
