@@ -69,6 +69,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - ctuni
+
 # Package: JBrowseR
 # Title: An R Interface to the JBrowse 2 Genome Browser
 # Version: 0.9.1
