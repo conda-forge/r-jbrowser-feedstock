@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/JBrowseR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/JBrowseR/JBrowseR_{{ version }}.tar.gz
-  sha256: 3e239a6f1717d862f050cd1e20ac378e9c62df73e96aee29deb349461378386a
+  sha256: 74efe7677d74ca556150be318cc1fe7ac42d27c1374e2d2bc9a6b43aeea720ed
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
